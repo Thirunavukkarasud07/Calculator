@@ -1,0 +1,15 @@
+.calculator {
+    max-width: 400px;
+    box-shadow: 0 0 0 1px #0000000f,0 1px 1px -.5px #0000000f,0 3px 3px -1.5px #0000000f,0 6px 6px -3px #0000000f,0 12px 12px -6px #0000000f,0 24px 24px -12px #0000000f;
+}
+button {
+    font-size: 1.5rem;
+    height: 80px;
+}
+#display {
+    font-size: 2rem;
+    height: 80px;
+}
+button.btn.btn-light {
+    border: 1px solid #3333;
+}

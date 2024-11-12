@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Calculator</h2>
+        <div class="calculator bg-light mx-auto p-3 rounded">
+            <input type="text" class="form-control mb-3 text-right" id="display" disabled placeholder="0">
+            <div class="row">
+                <button class="btn btn-light col-3" onclick="clearDisplay()">C</button>
+                <button class="btn btn-light col-3" onclick="deleteDigit()">DEL</button>
+                <button class="btn btn-light col-3" onclick="appendOperator('%')">%</button>
+                <button class="btn btn-light col-3" onclick="appendOperator('/')">/</button>
+                
+                <button class="btn btn-light col-3" onclick="appendNumber(7)">7</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(8)">8</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(9)">9</button>
+                <button class="btn btn-light col-3" onclick="appendOperator('*')">×</button>
+                
+                <button class="btn btn-light col-3" onclick="appendNumber(4)">4</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(5)">5</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(6)">6</button>
+                <button class="btn btn-light col-3" onclick="appendOperator('-')">-</button>
+                
+                <button class="btn btn-light col-3" onclick="appendNumber(1)">1</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(2)">2</button>
+                <button class="btn btn-light col-3" onclick="appendNumber(3)">3</button>
+                <button class="btn btn-light col-3" onclick="appendOperator('+')">+</button>
+                
+                <button class="btn btn-light col-3" onclick="appendNumber(0)">0</button>
+                <button class="btn btn-light col-3" onclick="appendDecimal()">.</button>
+                <button class="btn btn-light col-6" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
